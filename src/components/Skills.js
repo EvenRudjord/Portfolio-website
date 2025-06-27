@@ -19,7 +19,8 @@ import gitIcon from "../assets/img/SkillIcon/gitIcon.svg";
 import vscodeIcon from "../assets/img/SkillIcon/vscodeIcon.svg";
 import figmaIcon from "../assets/img/SkillIcon/figmaIcon.svg"; 
 import unityIconete from "../assets/img/SkillIcon/unity.svg"; 
-
+import svelteIcon from "../assets/img/SkillIcon/sveltIcon.svg"; 
+import reactIcon from "../assets/img/SkillIcon/reactIcon.svg";
 
 export const Skills = () => {
   const [activeKey, setActiveKey] = useState('sprak');
@@ -61,11 +62,11 @@ export const Skills = () => {
     },
     {
         language: 'Svelte',
-        imgUrl: javascriptIcon, // Placeholder, replace with actual Svelte icon
+        imgUrl: svelteIcon, 
     },
     {
-        language: 'react',
-        imgUrl: javascriptIcon, // Placeholder, replace with actual React icon
+        language: 'React',
+        imgUrl: reactIcon, 
     }
   ]
 
@@ -98,7 +99,7 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skills</h2>
+              <h2>Ferdigheter</h2>
               <Tab.Container
                 id="skills-tabs"
                 activeKey={activeKey}
