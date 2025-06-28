@@ -1,7 +1,7 @@
 import { Col, Modal, Button } from 'react-bootstrap';
 import { useState } from 'react';
 
-export const ProjectCard = ({ title, description, imgUrl, detalier, extraImages = [], buttons = [] }) => {
+export const ProjectCard = ({ title, description, imgUrl, detalier, buttons = [] }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -34,46 +34,16 @@ export const ProjectCard = ({ title, description, imgUrl, detalier, extraImages 
 
           {/* Knappene legges til her */}
           {buttons.length > 0 && (
-            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '1rem', justifyContent: 'center' }}>
+            <div className='artikkelKnapper'>
               {buttons.map(({ tittel, knappDirection }, idx) => (
                 <Button
                   key={idx}
-                  variant="primary"
                   onClick={() => window.open(knappDirection, '_blank')}
-                  className="px-3 py-1"
+                  className=""
                 >
                   {tittel}
                 </Button>
               ))}
-            </div>
-          )}
-
-          {extraImages.length > 0 && (
-            <div
-              className="extra-images"
-              style={{
-                marginTop: '1rem',
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '10px',
-                justifyContent: 'center'
-              }}
-            >
-              {extraImages.map((url, idx) => {
-                const isLastOddImage = extraImages.length % 2 !== 0 && idx === extraImages.length - 1;
-                return (
-                  <img
-                    key={idx}
-                    src={url}
-                    alt={`${title} ekstra bilde ${idx + 1}`}
-                    style={{
-                      width: isLastOddImage ? '100%' : '48%',
-                      borderRadius: '6px',
-                      objectFit: 'cover'
-                    }}
-                  />
-                );
-              })}
             </div>
           )}
         </Modal.Body>

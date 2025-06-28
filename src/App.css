@@ -146,16 +146,26 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  color: #b8b8b8; 
+  transition: color 0.2s;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+.navbar-link.active {
+  opacity: 1 !important;
+  color: #fff !important;
 }
+
+.navbar-link:focus,
+.navbar-link:active,
+.navbar-link:visited {
+  color: inherit;
+  outline: none;
+  box-shadow: none;
+}
+
 span.navbar-text {
     display: flex;
     align-items: center;
@@ -809,6 +819,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 100px;
 }
 
+/* forandre bilde inni artikkelen */
+.modal-content img {
+  width: 40%;
+  max-width: 250px;
+  height: auto;
+  float: right; /* Bildet flyter til venstre */
+  margin: 10px 10px 10px 10px;
+  border-radius: 12px;
+}
 
 .modal-description {
   font-size: 1.1rem;
@@ -832,4 +851,40 @@ button.btn-dark:hover {
 .modal-header .btn-close {
   filter: invert(1); /* If you use dark backgrounds */
 }
+
+.navbar-link {
+  color: #b8b8b8 !important;
+  transition: color 0.2s;
+}
+.navbar-link.active {
+  color: #fff !important;
+}
+
+.artikkelKnapper {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.artikkelKnapper button,
+.artikkelKnapper Button {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  border-radius: 50px;         /* Runde knapper */
+  padding: 17px 32px;
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+  outline: none;
+  box-shadow: none;
+}
+
 

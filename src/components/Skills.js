@@ -21,6 +21,7 @@ import figmaIcon from "../assets/img/SkillIcon/figmaIcon.svg";
 import unityIconete from "../assets/img/SkillIcon/unity.svg"; 
 import svelteIcon from "../assets/img/SkillIcon/sveltIcon.svg"; 
 import reactIcon from "../assets/img/SkillIcon/reactIcon.svg";
+import blenderIcon from "../assets/img/SkillIcon/blender.svg"; 
 
 export const Skills = () => {
   const [activeKey, setActiveKey] = useState('sprak');
@@ -90,6 +91,10 @@ export const Skills = () => {
     {
       language: 'Unity',
       imgUrl: unityIconete,
+    },
+    {
+      language: 'Blender',
+      imgUrl: blenderIcon,
     }
   ]
 
