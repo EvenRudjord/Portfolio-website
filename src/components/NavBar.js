@@ -5,6 +5,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon4 from "../assets/img/nav-icon4.svg";
 import navIcon5 from "../assets/img/nav-icon5.svg";
 
+
 export const NavBar = () => {
   const [activeLink, setActive] = useState("home");
   const [pendingLink, setPendingLink] = useState(null); 
@@ -135,7 +136,7 @@ export const NavBar = () => {
                 />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
+            <button className="vvd" onClick={() => window.open("/Prosjektfiler/CV.pdf", '_blank')}>
               <span>Curriculum Vitae (CV)</span>
             </button>
           </span>
