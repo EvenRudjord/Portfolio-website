@@ -1,5 +1,3 @@
-import {Col} from 'react-bootstrap';
-
 export const SkillCard = ({ language, imgUrl }) => {
   return (
         <div className="skillcard">

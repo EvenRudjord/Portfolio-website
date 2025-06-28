@@ -1,9 +1,6 @@
-import { Container, Row, Col, Nav, Tab, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 import starTrailThumbNail from "../assets/img/starTrailThumbNail.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
 import neatHeatLogo from "../assets/img/NeatHeat.png";
 import neatHeatEkstra1 from "../assets/img/neatHeatEkstra1.png";
 import neatHeatEkstra2 from "../assets/img/neatHeatEkstra2.png";

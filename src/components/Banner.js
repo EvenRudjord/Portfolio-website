@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Button, Container, Row, Col} from "react-bootstrap";
-import { BsArrowRightCircle } from "react-icons/bs";
 import headerImg from "../assets/img/even.png";
 
 export const Banner = () => {
