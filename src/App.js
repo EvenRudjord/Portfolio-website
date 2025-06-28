@@ -8,7 +8,7 @@ import { Projects } from './components/Projects.js';
 
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       <NavBar />
       <Banner />
