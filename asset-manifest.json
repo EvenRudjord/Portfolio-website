@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2fa66f7.css",
-    "main.js": "/static/js/main.e925f898.js",
+    "main.css": "/static/css/main.353073be.css",
+    "main.js": "/static/js/main.f0f0acd8.js",
     "static/js/453.96453769.chunk.js": "/static/js/453.96453769.chunk.js",
     "static/media/protofolieThumbnail.png": "/static/media/protofolieThumbnail.3323e2fce1f40f64c83d.png",
     "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/neatHeatEkstra2.png": "/static/media/neatHeatEkstra2.81719289bf8329d58aa0.png",
-    "static/media/color-sharp2.png": "/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/even.png": "/static/media/even.cee563075d58e0fcccf9.png",
     "static/media/neatHeatEkstra1.png": "/static/media/neatHeatEkstra1.9590ef5e27510e71c356.png",
     "static/media/NeatHeat.png": "/static/media/NeatHeat.7ecd372cb166d244f7e2.png",
@@ -17,17 +16,12 @@
     "static/media/CentraNo2-Medium.ttf": "/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/footer-bg.png": "/static/media/footer-bg.7bd67c0f73571d0acc02.png",
-    "static/media/project-img2.png": "/static/media/project-img2.2e52097c417f9f1134b0.png",
     "static/media/starTrailThumbNail.png": "/static/media/starTrailThumbNail.45f70809e395e453814b.png",
-    "static/media/project-img3.png": "/static/media/project-img3.675b30d2f975a1bc1d09.png",
     "static/media/starTrailExtra1.png": "/static/media/starTrailExtra1.1357419c45b3f13aabd6.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/meter2.svg": "/static/media/meter2.1b8f416eccd1ee162218b8528a1c5cdc.svg",
-    "static/media/meter1.svg": "/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
-    "static/media/meter3.svg": "/static/media/meter3.2201f7e4df22bc4b08180210474f28cc.svg",
-    "static/media/logo.svg": "/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/reactIcon.svg": "/static/media/reactIcon.178cadce2f54f553556fe398ca8397e0.svg",
     "static/media/sveltIcon.svg": "/static/media/sveltIcon.392637bcea5ce8897c3ef5d0f9161a22.svg",
     "static/media/blender.svg": "/static/media/blender.dfaa67627dbbc6e43663ca65634d0f7b.svg",
@@ -46,12 +40,12 @@
     "static/media/figmaIcon.svg": "/static/media/figmaIcon.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/CSS.svg": "/static/media/CSS.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/HTML.svg": "/static/media/HTML.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.d2fa66f7.css.map": "/static/css/main.d2fa66f7.css.map",
-    "main.e925f898.js.map": "/static/js/main.e925f898.js.map",
+    "main.353073be.css.map": "/static/css/main.353073be.css.map",
+    "main.f0f0acd8.js.map": "/static/js/main.f0f0acd8.js.map",
     "453.96453769.chunk.js.map": "/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2fa66f7.css",
-    "static/js/main.e925f898.js"
+    "static/css/main.353073be.css",
+    "static/js/main.f0f0acd8.js"
   ]
 }
