@@ -46,7 +46,7 @@ useEffect(() => {
                 <Row className = "align-items-center">
                     <Col xs={12} md={6} xl={7}>
                     {/* <span className="tagline">Welcome to my Portofolio</span> */}
-                    <h1>{"Even Rudjord "}<br /><span className="wrap" style={{display: "inline-block", minWidth: "10ch"}}>{text}</span></h1>
+                    <h1>{"Bob Rudjord "}<br /><span className="wrap" style={{display: "inline-block", minWidth: "10ch"}}>{text}</span></h1>
                     <p>Jeg er systemutvikler og UX-designer med lidenskap for brukervennlige digitale løsninger. Min interesse for informatikk startet som 14-åring med spillutvikling. Nå er jeg 20 år, og studerer <a href="https://www.uio.no/studier/program/inf-design/" target="_blank" style={{ textDecoration: 'none'} }>Informatikk: Design, bruk og interaksjon</a> ved Universitetet i Oslo.</p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
