@@ -1,4 +1,5 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import starTrailThumbNail from "../assets/img/starTrailThumbNail.png";
 import neatHeatLogo from "../assets/img/NeatHeat.png";
@@ -91,6 +92,24 @@ export const Projects = () => {
     }
   ];
 
+  const [startIdx, setStartIdx] = useState(0);
+  const visibleCount = 3;
+
+  const next = () => setStartIdx((prev) => (prev + 1) % projects.length);
+  const prev = () => setStartIdx((prev) => (prev - 1 + projects.length) % projects.length);
+
+  const getDisplayProjects = () => {
+    // Show 5: [peekLeft, left, center, right, peekRight]
+    const arr = [];
+    const total = projects.length;
+    for (let i = -2; i <= 2; i++) {
+      arr.push(projects[(startIdx + i + total) % total]);
+    }
+    return arr;
+  };
+
+  const displayProjects = getDisplayProjects();
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -98,20 +117,34 @@ export const Projects = () => {
           <Col>
             <h2>Prosjekter</h2>
             <p>En samling prosjekter som reflekterer kompetanse innen systemutvikling, UX og kreativ problemløsning</p>
-                  <Row>
-                    {projects.map((project, index) => {
-                      return (
-                        <ProjectCard 
-                          key={index}
-                          {...project}
-                        />
-                      );
-                    })}
-                  </Row>
+            <div className="custom-carousel-wrapper">
+              <Button variant="outline-light" onClick={prev} className="carousel-arrow">
+                &#8592;
+              </Button>
+              <div className="custom-carousel-track">
+                {displayProjects.map((project, idx) => {
+                  // idx: 0=peekLeft, 1=left, 2=center, 3=right, 4=peekRight
+                  let cardClass = "carousel-card";
+                  if (idx === 2) cardClass += " center";
+                  else if (idx === 1) cardClass += " left";
+                  else if (idx === 3) cardClass += " right";
+                  else if (idx === 0) cardClass += " peek-left";
+                  else if (idx === 4) cardClass += " peek-right";
+                  return (
+                    <div key={idx} className={cardClass}>
+                      <ProjectCard {...project} />
+                    </div>
+                  );
+                })}
+              </div>
+              <Button variant="outline-light" onClick={next} className="carousel-arrow">
+                &#8594;
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src="colorSharp2"/>
+      <img className="background-image-right" src="colorSharp2" alt="" />
     </section>
   );
 };

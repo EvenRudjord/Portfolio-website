@@ -606,8 +606,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  width: 100%;
-  height: 260px;
+  width: 300%;
+  height: 300%;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
@@ -886,6 +886,128 @@ button.btn-dark:hover {
   border: 1px solid rgba(255, 255, 255, 1);
   outline: none;
   box-shadow: none;
+}
+
+.custom-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.carousel-arrow {
+  height: 60px;
+  width: 60px;
+  font-size: 2rem;
+  border-radius: 50%;
+  z-index: 2;
+  margin: 0 10px;
+}
+
+.custom-carousel-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98vw;         /* Even wider! */
+  max-width: 2200px;   /* Allow more space on big screens */
+  min-width: 320px;
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+  position: relative;
+}
+
+.carousel-card {
+  transition: 
+    transform 0.5s cubic-bezier(.77,0,.18,1),
+    opacity 0.5s cubic-bezier(.77,0,.18,1);
+  
+  width: 32vw;         /* 3 x 32vw = 96vw, fills almost all the track */
+  max-width: none;     /* Remove max-width limit */
+  min-width: 320px;    /* Make sure it's not too small */
+  z-index: 1;
+  opacity: 0.5;
+  filter: grayscale(60%);
+  transform: scale(0.85) translateY(30px);
+  pointer-events: none;
+}
+
+
+
+/* Make the three main cards fill the space and look like big cards */
+.carousel-card.left,
+.carousel-card.center,
+.carousel-card.right {
+  z-index: 3;
+  opacity: 1;
+  filter: none;
+  transform: scale(1.04) translateY(0); /* Slightly larger for effect */
+  pointer-events: auto; 
+  border-radius: 36px;
+  margin: 0 1vw;
+  width: 33vw;
+  
+  transition:
+    transform 0.5s cubic-bezier(.77,0,.18,1),
+    opacity 0.5s cubic-bezier(.77,0,.18,1),
+    box-shadow 0.5s cubic-bezier(.77,0,.18,1);
+}
+
+.carousel-card.center {
+  z-index: 3;
+  opacity: 1;
+  filter: none;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+.carousel-card.left,
+.carousel-card.center,
+.carousel-card.right {
+  z-index: 3;
+  opacity: 1;
+  filter: none;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+.carousel-card.peek-left,
+.carousel-card.peek-right {
+  opacity: 0.15;
+  filter: blur(2px);
+  transform: scale(0.7) translateY(60px);
+  z-index: 0;
+  pointer-events: none;
+  margin-left: -10vw;
+  margin-right: -10vw;
+}
+
+.carousel-card.peek-left {
+  margin-right: -18vw;
+}
+
+.carousel-card.peek-right {
+  margin-left: -18vw;
+}
+
+@media (max-width: 900px) {
+  .custom-carousel-track {
+    width: 98vw;
+  }
+  .carousel-card {
+    width: 90vw;
+    max-width: 98vw;
+    margin: 0 -10vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-card.left,
+  .carousel-card.center,
+  .carousel-card.right {
+    width: 90vw;
+    min-width: 0;
+    max-width: 98vw;
+    padding: 16px 4vw 24px 4vw;
+  }
 }
 
 

@@ -11,7 +11,7 @@ export const ProjectCard = ({ title, description, imgUrl, detalier, buttons = []
     <>
       <Col sm={6} md={4}>
         <div className="proj-imgbx" onClick={handleOpen} style={{ cursor: 'pointer' }}>
-          <img src={imgUrl} alt={title} style={{ width: '100%' }} />
+          <img src={imgUrl} alt={title}/>
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
