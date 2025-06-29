@@ -888,6 +888,7 @@ button.btn-dark:hover {
   box-shadow: none;
 }
 
+/*alt mer carousel i prosjektet*/
 .custom-carousel-wrapper {
   display: flex;
   align-items: center;
@@ -896,13 +897,35 @@ button.btn-dark:hover {
 }
 
 .carousel-arrow {
-  height: 60px;
-  width: 60px;
+  margin-top: 30px;
+  height: 70px;
+  width: 70px;
   font-size: 2rem;
-  border-radius: 50%;
+  border-style: solid;
+  border-radius: 20px !important;
   z-index: 2;
-  margin: 0 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: linear-gradient(90deg, #AA367C 0%, #4A2FBD 100%);
+  color: #fff; /* Makes arrow white */
+  border: none; /* Optional: remove border for a cleaner look */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  
 }
+
+.carousel-arrow.left {
+  margin-right: 100vh;
+  margin-left: 0;
+}
+
+.carousel-arrow.right {
+  margin-left: 20vw;
+  margin-right: 0;
+}
+
 
 .custom-carousel-track {
   display: flex;
@@ -973,7 +996,7 @@ button.btn-dark:hover {
 .carousel-card.peek-right {
   opacity: 0.15;
   filter: blur(2px);
-  transform: scale(0.7) translateY(60px);
+  transform: scale(0.7) translateY(50px);
   z-index: 0;
   pointer-events: none;
   margin-left: -10vw;
@@ -1009,5 +1032,41 @@ button.btn-dark:hover {
     padding: 16px 4vw 24px 4vw;
   }
 }
+
+.project-arrows {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  min-height: 80px; /* juster etter pilstørrelse */
+}
+
+.carousel-arrow.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.carousel-arrow.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+.knapperOgProsjektNummer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 0.2rem;
+}
+
 
 

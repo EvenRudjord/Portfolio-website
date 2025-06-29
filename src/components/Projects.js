@@ -109,6 +109,9 @@ export const Projects = () => {
   };
 
   const displayProjects = getDisplayProjects();
+  const allProjectNumber = projects.length;
+  const currentProjectNumber = ((startIdx + projects.length) % projects.length) + 1;
+  const currentProjectName = projects[(startIdx + projects.length) % projects.length].title;
 
   return (
     <section className="project" id="projects">
@@ -117,10 +120,8 @@ export const Projects = () => {
           <Col>
             <h2>Prosjekter</h2>
             <p>En samling prosjekter som reflekterer kompetanse innen systemutvikling, UX og kreativ problemløsning</p>
+            
             <div className="custom-carousel-wrapper">
-              <Button variant="outline-light" onClick={prev} className="carousel-arrow">
-                &#8592;
-              </Button>
               <div className="custom-carousel-track">
                 {displayProjects.map((project, idx) => {
                   // idx: 0=peekLeft, 1=left, 2=center, 3=right, 4=peekRight
@@ -137,7 +138,17 @@ export const Projects = () => {
                   );
                 })}
               </div>
-              <Button variant="outline-light" onClick={next} className="carousel-arrow">
+            </div>
+
+            <div className="project-arrows">
+              <Button variant="outline-light" onClick={prev} className="carousel-arrow left">
+                &#8592;
+              </Button>
+              <div className="knapperOgProsjektNummer">
+                <h4 style={{ margin: 0 }}>{currentProjectName}</h4>
+                <span>Prosjekt: {currentProjectNumber} / {allProjectNumber}</span>
+              </div>
+              <Button variant="outline-light" onClick={next} className="carousel-arrow right">
                 &#8594;
               </Button>
             </div>

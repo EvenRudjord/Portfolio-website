@@ -1,5 +1,6 @@
 import { Col, Modal, Button } from 'react-bootstrap';
 import { useState } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group'; 
 
 export const ProjectCard = ({ title, description, imgUrl, detalier, buttons = [] }) => {
   const [show, setShow] = useState(false);
