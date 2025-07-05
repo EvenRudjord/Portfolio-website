@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d68fb2a4.css",
-    "main.js": "/static/js/main.30589ba3.js",
+    "main.css": "/static/css/main.42152c85.css",
+    "main.js": "/static/js/main.fd9548b8.js",
     "static/js/453.96453769.chunk.js": "/static/js/453.96453769.chunk.js",
     "static/media/color-sharp.png": "/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/neatHeatEkstra2.png": "/static/media/neatHeatEkstra2.81719289bf8329d58aa0.png",
     "static/media/even.png": "/static/media/even.cee563075d58e0fcccf9.png",
+    "static/media/Maraton.png": "/static/media/Maraton.0076fffc1a54e0764cdc.png",
+    "static/media/Gallho.png": "/static/media/Gallho.fffb7ff592af9c83d67a.png",
     "static/media/neatHeatEkstra1.png": "/static/media/neatHeatEkstra1.9590ef5e27510e71c356.png",
+    "static/media/Fall.png": "/static/media/Fall.d100c1beed88c928d631.png",
     "static/media/protofolieThumbnail.png": "/static/media/protofolieThumbnail.0e5b83723cd2007c159b.png",
     "static/media/chatbille.jpg": "/static/media/chatbille.767027624a8d02332694.jpg",
     "static/media/neatHeatEkstra3.png": "/static/media/neatHeatEkstra3.dc4f0d1f0083aa369f59.png",
@@ -40,12 +43,12 @@
     "static/media/figmaIcon.svg": "/static/media/figmaIcon.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/CSS.svg": "/static/media/CSS.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "static/media/HTML.svg": "/static/media/HTML.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.d68fb2a4.css.map": "/static/css/main.d68fb2a4.css.map",
-    "main.30589ba3.js.map": "/static/js/main.30589ba3.js.map",
+    "main.42152c85.css.map": "/static/css/main.42152c85.css.map",
+    "main.fd9548b8.js.map": "/static/js/main.fd9548b8.js.map",
     "453.96453769.chunk.js.map": "/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d68fb2a4.css",
-    "static/js/main.30589ba3.js"
+    "static/css/main.42152c85.css",
+    "static/js/main.fd9548b8.js"
   ]
 }
