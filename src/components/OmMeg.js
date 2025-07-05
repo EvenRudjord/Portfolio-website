@@ -9,13 +9,20 @@ export const OmMeg = () => {
   const [open, setOpen] = useState([false, false, false, false]);
 
 const toggle = (index) => {
-  const updated = [...open];
-  updated[index] = !updated[index];
-  setOpen(updated);
+  setOpen((prev) => prev.map((v, i) => i === index ? !v : false));
 };
 
   return (
-    <section className="skill" id="skills">
+    <section className='fullOmMeg'>
+    <section className="skill">
+      {/* <Container>
+        <Row>
+          <Col>
+          <h2>Om Meg</h2>
+          <p>En mer personlig og uformell presentasjon av meg selv.</p>
+          </Col>
+        </Row> 
+      </Container> */}
       <Container>
         <Row>
           <Col>
@@ -73,7 +80,7 @@ const toggle = (index) => {
         <Row>
           <Col md={7}>
             <div className="milepal-bx">
-              <h2>Milepæler</h2>
+              <h2 style={{ marginTop: "0px", fontSize: "35px" }}>Milepæler</h2>
               <p><b>Galdhøpiggen:</b> Besteg Norges høyeste fjell, 2469 moh.</p>
               <p><b>Fallskjermhopp:</b> Hoppet fra 2000 meters høyde med fallskjerm.</p>
               <p><b>Maraton:</b> Fullført fullmaraton i Sør-Afrika etter lang forberedelse.</p>
@@ -91,6 +98,7 @@ const toggle = (index) => {
           </Col>
         </Row>
       </Container>
+    </section>
     </section>
   );
 };
