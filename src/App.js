@@ -5,6 +5,7 @@ import { Banner } from "./components/Banner.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Skills } from './components/Skills.js';
 import { Projects } from './components/Projects.js';
+import { OmMeg } from './components/OmMeg.js';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <OmMeg />
     </div>
   );
 }
